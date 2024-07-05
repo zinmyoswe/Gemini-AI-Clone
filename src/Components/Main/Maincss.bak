@@ -40,7 +40,7 @@
 
 .main .cards{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
     gap: 15px;
     padding: 20px;
 }
@@ -122,6 +122,7 @@
     padding: 0px 5%;
     max-height: 70vh;
     overflow-y: scroll;
+
 }
 
 .result::-webkit-scrollbar{
@@ -157,11 +158,22 @@
     border-radius: 4px;
     border: none;
     background-color: #f6f7f8;
-    background: linear-gradient(to right, #9ed7ff, #ffffff, #9ed7ff);
+    background: linear-gradient(to right,#9ed7ff,#ffffff,#9ed7ff);
     background-size: 800px 50px;
     height: 20px;
     animation: loader 3s infinite linear;
 }
+
+/* .loader hr2{
+    border-radius: 4px;
+    border: none;
+    background-color: #f6f7f8;
+    background: linear-gradient(to right,#9ed7ff,#9ed7ff,#ffffff);
+    background-size: 800px 50px;
+    height: 20px;
+    animation: loader 3s infinite linear;
+} */
+
 
 @keyframes loader{
     0%{
@@ -176,54 +188,6 @@
     font-size: 17px;
     font-weight: 300;
     line-height: 1.8;
-}
-
-/* New styles for code blocks and copy button */
-.code-block {
-    position: relative;
-    background-color: #f5f5f5;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    overflow: auto;
-}
-
-.code-block pre {
-    margin: 0;
-    background: #f5f5f5;
-    color: #333;
-    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-}
-
-.copy-btn {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 3px;
-    cursor: pointer;
-}
-
-.copy-btn:hover {
-    background-color: #0056b3;
-}
-
-a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-b {
-    font-weight: bold;
 }
 
 @media (max-width:600px){
